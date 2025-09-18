@@ -6,8 +6,18 @@ class JokeController extends Controller
 {
     public function index()
     {
-        # Meerdere chucknorris jokes worden opgehaald, gelimiteerd tot 5
-        $jokes = $this->fetchMultipleJokes(5);
-        return view('jokes.index', compact('jokes'));
+        
+    }
+
+    public function fiveJokes()
+    {
+        $fiveJokes = $this->fetchMultipleJokes(5);
+        return view('jokes.five', compact('fiveJokes'));
+    }
+
+    public function twelveJokes()
+    {
+        $twelveJokes = $this->fetchMultipleJokes(12);
+        return view('jokes.twelve', compact('twelveJokes'));
     }
 }

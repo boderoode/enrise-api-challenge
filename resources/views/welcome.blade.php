@@ -46,7 +46,8 @@
         <h1>Welcome to Laravel</h1>
         <p>Your Laravel application is running successfully!</p>
         
-        <a href="{{ route('jokes.index') }}" class="btn">View Chuck Norris Jokes</a>
+        <a href="{{ route('jokes.five') }}" class="btn">View 5 Chuck Norris Jokes</a>
+        <a href="{{ route('jokes.twelve') }}" class="btn">View 12 Chuck Norris Jokes</a>
     </div>
 </body>
 </html>

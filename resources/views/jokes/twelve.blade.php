@@ -10,11 +10,11 @@
         <h1>Chuck Norris Jokes vanuit de API</h1>
         <ul>
             {{-- Loopen door meerdere jokes in vorm van een array --}}
-            @foreach ($jokes as $joke)
+            @foreach ($twelveJokes as $joke)
                 <li>{{ $joke['value'] }}</li>
             @endforeach
         </ul>
-        <a href="{{ route('jokes.index') }}" class="btn">Laad 5 nieuwe chuck norris grappen</a>
+        <a href="{{ route('jokes.twelve') }}" class="btn">Laad 12 nieuwe chuck norris grappen</a>
     </div>
 </body>
 </html>

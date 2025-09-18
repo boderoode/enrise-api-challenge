@@ -8,3 +8,5 @@ Route::get('/', function () {
 });
 
 Route::get('/jokes', [JokeController::class, 'index'])->name('jokes.index');
+Route::get('/jokes/five', [JokeController::class, 'fiveJokes'])->name('jokes.five');
+Route::get('/jokes/twelve', [JokeController::class, 'twelveJokes'])->name('jokes.twelve');
